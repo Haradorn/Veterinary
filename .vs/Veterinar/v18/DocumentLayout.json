@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|c:\\users\\user\\documents\\projects vs 2022\\veterinar\\veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\veterinar\\globaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\globaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GlobalData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\GlobalData.cs",
+              "RelativeDocumentMoniker": "Veterinar\\GlobalData.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\GlobalData.cs",
+              "RelativeToolTip": "Veterinar\\GlobalData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T17:54:17.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddAppointmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\AddAppointmentForm.cs",
+              "RelativeDocumentMoniker": "Veterinar\\AddAppointmentForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\AddAppointmentForm.cs",
+              "RelativeToolTip": "Veterinar\\AddAppointmentForm.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T17:35:09.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VaccinesList.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\VaccinesList.cs",
+              "RelativeDocumentMoniker": "Veterinar\\VaccinesList.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\VaccinesList.cs",
+              "RelativeToolTip": "Veterinar\\VaccinesList.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T17:33:32.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\AddAppointmentForm.cs",
+              "RelativeDocumentMoniker": "Veterinar\\AddAppointmentForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\AddAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinar\\AddAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T17:31:00.382Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\Form1.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\Form1.cs",
+              "RelativeToolTip": "Veterinar\\Form1.cs",
+              "ViewState": "AgIAACICAAAAAAAAAAAlwDgCAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T17:28:48.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VaccinesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\VaccinesList.cs",
+              "RelativeDocumentMoniker": "Veterinar\\VaccinesList.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\VaccinesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinar\\VaccinesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T16:51:51.464Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\Form1.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Projects VS 2022\\Veterinar\\Veterinar\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinar\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T20:29:38.003Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

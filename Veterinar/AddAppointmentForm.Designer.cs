@@ -35,6 +35,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,8 +49,8 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -111,6 +112,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
@@ -127,6 +129,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Общее";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(744, 225);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(28, 28);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "..";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -171,7 +183,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(781, 691);
+            this.tabPage2.Size = new System.Drawing.Size(846, 917);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Услуга";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -182,7 +194,7 @@
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(775, 685);
+            this.richTextBox1.Size = new System.Drawing.Size(840, 911);
             this.richTextBox1.TabIndex = 11;
             this.richTextBox1.Text = "";
             // 
@@ -192,7 +204,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(781, 691);
+            this.tabPage3.Size = new System.Drawing.Size(846, 917);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Что болело";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -203,7 +215,7 @@
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.Location = new System.Drawing.Point(3, 3);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(775, 685);
+            this.richTextBox2.Size = new System.Drawing.Size(840, 911);
             this.richTextBox2.TabIndex = 12;
             this.richTextBox2.Text = "";
             // 
@@ -213,7 +225,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(781, 691);
+            this.tabPage4.Size = new System.Drawing.Size(846, 917);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Что было сделано";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -224,7 +236,7 @@
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox3.Location = new System.Drawing.Point(3, 3);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(775, 685);
+            this.richTextBox3.Size = new System.Drawing.Size(840, 911);
             this.richTextBox3.TabIndex = 13;
             this.richTextBox3.Text = "";
             // 
@@ -234,7 +246,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(807, 691);
+            this.tabPage5.Size = new System.Drawing.Size(846, 917);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Что нужно сделать";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -245,7 +257,7 @@
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox4.Location = new System.Drawing.Point(3, 3);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(801, 685);
+            this.richTextBox4.Size = new System.Drawing.Size(840, 911);
             this.richTextBox4.TabIndex = 14;
             this.richTextBox4.Text = "";
             // 
@@ -259,18 +271,6 @@
             this.panel1.Size = new System.Drawing.Size(854, 100);
             this.panel1.TabIndex = 16;
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(59, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 30);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "ОК";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -282,6 +282,18 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(59, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 30);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "ОК";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // AddAppointmentForm
             // 
@@ -329,5 +341,6 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }
