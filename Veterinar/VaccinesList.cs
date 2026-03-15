@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using Veterinar;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Veterinar;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Veterinar
 {
@@ -62,6 +63,14 @@ namespace Veterinar
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            var vaccine = db.Vaccines.Where(r => EF.Functions.Like(r.Name, String.Format("%" + textBox1.Text + "%"))).ToList();
+            dataGridView1.DataSource = vaccine;
+            dataGridView1.Columns["Id"].Visible = false;
+            dataGridView1.Columns["Name"].HeaderText = "Название вакцины";
         }
     }
 }
