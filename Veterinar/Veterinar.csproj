@@ -231,6 +231,12 @@
       <DependentUpon>LookAppointmentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Pet.cs" />
+    <Compile Include="PetsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetsList.Designer.cs">
+      <DependentUpon>PetsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vaccine.cs" />
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LookAppointmentForm.resx">
       <DependentUpon>LookAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetsList.resx">
+      <DependentUpon>PetsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

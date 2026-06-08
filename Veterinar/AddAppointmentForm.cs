@@ -54,5 +54,19 @@ namespace Veterinar
         private void textBox1_Click(object sender, EventArgs e)
         {
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PetsList petsList = new PetsList();
+
+            DialogResult result = petsList.ShowDialog(this);
+            if (result == DialogResult.Cancel) return;
+            else
+            {
+                db.Pets.Load();
+                Pet appointment = db.Pets.Find(GlobalData.Data);
+                comboBox2.SelectedValue = appointment.Id;
+            }
+        }
     }
 }

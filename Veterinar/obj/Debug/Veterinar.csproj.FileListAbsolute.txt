@@ -265,3 +265,4 @@ C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.csproj.C
 C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.csproj.Up2Date
 C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.exe
 C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.pdb
+C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.PetsList.resources
