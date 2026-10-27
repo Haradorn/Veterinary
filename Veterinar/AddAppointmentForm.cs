@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System;
@@ -16,57 +17,121 @@ namespace Veterinar
 {
     public partial class AddAppointmentForm : Form
     {
-        ApplicationContext db;
-        public AddAppointmentForm()
+        private ApplicationContext db;
+        private int _appointmentId;
+
+        public AddAppointmentForm() : this(0) { }
+        public AddAppointmentForm(int appointmentId)
         {
             InitializeComponent();
-            var builder = new ConfigurationBuilder();
-            // установка пути к текущему каталогу
-            builder.SetBasePath(Directory.GetCurrentDirectory());
-            // получаем конфигурацию из файла appsettings.json
-            builder.AddJsonFile("appsettings.json");
-            // создаем конфигурацию
+            _appointmentId = appointmentId;
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
             var config = builder.Build();
-            // получаем строку подключения
             string connectionString = config.GetConnectionString("DefaultConnection");
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationContext>();
+            // Отключаем проверку пулов и лишнее логирование для SQLite
             var options = optionsBuilder.UseSqlite(connectionString).Options;
             db = new ApplicationContext(options);
+
+            // Отключаем автоматическое отслеживание изменений на уровне контекста формы,
+            // чтобы EF вообще не тратил ресурсы на кэширование миллиона строк
+            db.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+
+            this.Load += AddAppointmentForm_Load;
+            this.FormClosed += AddAppointmentForm_FormClosed;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private async void AddAppointmentForm_Load(object sender, EventArgs e)
         {
-            VaccinesList vaccinesList = new VaccinesList();
+            //if (_appointmentId > 0)
+            //{
+            //    // Берем только ID вакцины, не выкачивая весь объект
+            //    var vaccineId = await db.Vaccines
+            //        .Where(x => x.Id == _appointmentId)
+            //        .Select(x => x.Id)
+            //        .FirstOrDefaultAsync();
 
-            DialogResult result = vaccinesList.ShowDialog(this);
-            if (result == DialogResult.Cancel) return;
-            else
+            //    if (vaccineId > 0)
+            //    {
+            //        // Достаем ТОЛЬКО нужные поля в строго типизированный объект
+            //        var currentItem = await db.Vaccines
+            //            .Where(x => x.Id == vaccineId)
+            //            .Select(x => new LookupItem { Id = (int)x.Id, Name = x.Name })
+            //            .FirstOrDefaultAsync();
+
+            //        if (currentItem != null)
+            //        {
+            //            // Оборачиваем в List<LookupItem>
+            //            comboBox3.DataSource = new List<LookupItem> { currentItem };
+            //            comboBox3.DisplayMember = "Name";
+            //            comboBox3.ValueMember = "Id";
+            //            comboBox3.SelectedValue = currentItem.Id;
+            //        }
+            //    }
+            //}
+        }
+        public class LookupItem
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            // ВНИМАНИЕ: Убедитесь, что внутри VaccinesList() нет вызова .Load()!
+            using (VaccinesList vaccinesList = new VaccinesList())
             {
+                if (vaccinesList.ShowDialog(this) == DialogResult.Cancel) return;
 
-                db.Vaccines.Load();
-                Vaccine appointment = db.Vaccines.Find(GlobalData.Data);
-                comboBox3.SelectedValue = appointment.Id;
+                var vaccine = await db.Vaccines
+                    .Where(v => v.Id == GlobalData.Data)
+                    .Select(v => new LookupItem { Id = (int)v.Id, Name = v.Name })
+                    .FirstOrDefaultAsync();
+
+                if (vaccine != null)
+                {
+                    comboBox3.DataSource = new List<LookupItem> { vaccine };
+                    comboBox3.DisplayMember = "Name";
+                    comboBox3.ValueMember = "Id";
+                    comboBox3.SelectedValue = vaccine.Id;
+                }
             }
-
         }
 
-        private void textBox1_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            PetsList petsList = new PetsList();
-
-            DialogResult result = petsList.ShowDialog(this);
-            if (result == DialogResult.Cancel) return;
-            else
+            // ВНИМАНИЕ: Убедитесь, что внутри PetsList() нет вызова .Load()!
+            using (PetsList petsList = new PetsList())
             {
-                db.Pets.Load();
-                Pet appointment = db.Pets.Find(GlobalData.Data);
-                comboBox2.SelectedValue = appointment.Id;
+                if (petsList.ShowDialog(this) == DialogResult.Cancel) return;
+
+                var pet = await db.Pets
+                    .Where(p => p.Id == GlobalData.Data)
+                    .Select(p => new LookupItem { Id = p.Id, Name = p.PetName }) // Исправлено: pet.PetName -> Name
+                    .FirstOrDefaultAsync();
+
+                if (pet != null)
+                {
+                    comboBox2.DataSource = new List<LookupItem> { pet };
+                    comboBox2.DisplayMember = "Name";
+                    comboBox2.ValueMember = "Id";
+                    comboBox2.SelectedValue = pet.Id;
+                }
             }
+        }
+
+        private void AddAppointmentForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            db?.Dispose();
+        }
+        private bool _isUpdatingDataSource = false;
+        private async void comboBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

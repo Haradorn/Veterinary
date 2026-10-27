@@ -266,3 +266,4 @@ C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.csproj.U
 C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.exe
 C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.pdb
 C:\Users\user\Documents\GitHub\Veterinary\Veterinar\obj\Debug\Veterinar.PetsList.resources
+C:\Users\user\Documents\GitHub\Veterinary\Veterinar\bin\Debug\System.Data.SQLite.dll

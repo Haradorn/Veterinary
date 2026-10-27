@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Veterinar;
-using System.IO;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using static Veterinar.AddAppointmentForm;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Veterinar
@@ -91,7 +92,7 @@ namespace Veterinar
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -101,60 +102,111 @@ namespace Veterinar
 
                     int id = 0;
                     bool converted = Int32.TryParse(dataGridView1[0, index].Value.ToString(), out id);
-                    if (converted == false)
+                    if (!converted) return;
+
+                    // 1. Загружаем сам прием. 
+                    // Используем Include, чтобы EF сразу подтянул связанные данные без лишних запросов
+                    Appointment appointment = await db.Appointments
+                        .Include(a => a.Client)
+                        .Include(a => a.Pet)
+                        .Include(a => a.Vaccine)
+                        .FirstOrDefaultAsync(a => a.Id == id);
+
+                    if (appointment == null)
+                    {
+                        MessageBox.Show("Запись не найдена в базе данных.");
                         return;
-                    Appointment appointment = db.Appointments.Find(id);
-                    AddAppointmentForm addAppointment = new AddAppointmentForm();
-                    List<Client> clients = db.Clients.ToList();
-                    addAppointment.comboBox1.DataSource = clients;
-                    addAppointment.comboBox1.ValueMember = "Id";
-                    addAppointment.comboBox1.DisplayMember = "Name";
+                    }
+
+                    AddAppointmentForm addAppointment = new AddAppointmentForm(appointment.Id);
+
+                    // 3. ТОЧЕЧНО заполняем comboBox1 (Клиент) из данных существующего приема
                     if (appointment.Client != null)
+                    {
+                        addAppointment.comboBox1.DataSource = new List<LookupItem>
+                    {
+                        new LookupItem { Id = appointment.Client.Id, Name = appointment.Client.Name }
+                    };
+                        addAppointment.comboBox1.DisplayMember = "Name";
+                        addAppointment.comboBox1.ValueMember = "Id";
                         addAppointment.comboBox1.SelectedValue = appointment.Client.Id;
-                    List<Pet> pets = db.Pets.ToList();
-                    addAppointment.comboBox2.DataSource = pets;
-                    addAppointment.comboBox2.ValueMember = "Id";
-                    addAppointment.comboBox2.DisplayMember = "PetName";
+                    }
+
+                    // 4. ТОЧЕЧНО заполняем comboBox2 (Питомец)
                     if (appointment.Pet != null)
+                    {
+                        addAppointment.comboBox2.DataSource = new List<LookupItem>
+                    {
+                        new LookupItem { Id = appointment.Pet.Id, Name = appointment.Pet.PetName }
+                    };
+                        addAppointment.comboBox2.DisplayMember = "Name";
+                        addAppointment.comboBox2.ValueMember = "Id";
                         addAppointment.comboBox2.SelectedValue = appointment.Pet.Id;
-                    List<Vaccine> vaccines = db.Vaccines.ToList();
-                    addAppointment.comboBox3.DataSource = vaccines;
-                    addAppointment.comboBox3.ValueMember = "Id";
-                    addAppointment.comboBox3.DisplayMember = "Name";
+                    }
+
+                    // 5. ТОЧЕЧНО заполняем comboBox3 (Вакцина) - ТЕПЕРЬ ТУТ БУДЕТ ПРАВИЛЬНОЕ ЗНАЧЕНИЕ!
                     if (appointment.Vaccine != null)
+                    {
+                        addAppointment.comboBox3.DataSource = new List<LookupItem>
+                    {
+                        new LookupItem { Id = (int)appointment.Vaccine.Id, Name = appointment.Vaccine.Name }
+                    };
+                        addAppointment.comboBox3.DisplayMember = "Name";
+                        addAppointment.comboBox3.ValueMember = "Id";
                         addAppointment.comboBox3.SelectedValue = appointment.Vaccine.Id;
+                    }
+
+                    // Заполняем текстовые поля
                     addAppointment.richTextBox1.Text = appointment.Service;
                     addAppointment.richTextBox2.Text = appointment.WhatHurt;
                     addAppointment.richTextBox3.Text = appointment.WhatNeedToDo;
                     addAppointment.richTextBox4.Text = appointment.WhatWasDone;
                     addAppointment.dateTimePicker1.Value = appointment.Date;
 
-
+                    // Отображаем форму
                     DialogResult result = addAppointment.ShowDialog(this);
-                    if (result == DialogResult.Cancel)
-                        return;
-                    else
+                    if (result == DialogResult.Cancel) return;
+
+                    // --- СОХРАНЕНИЕ ИЗМЕНЕНИЙ ---
+                    // Так как в ComboBox теперь лежат объекты LookupItem, а не сущности БД, 
+                    // мы привязываем их обратно к объекту по их Id:
+                    if (addAppointment.comboBox1.SelectedValue != null)
                     {
-
-                        appointment.Client = (Client)addAppointment.comboBox1.SelectedItem;
-                        appointment.Pet = (Pet)addAppointment.comboBox2.SelectedItem;
-                        appointment.Vaccine = (Vaccine)addAppointment.comboBox3.SelectedItem;
-                        appointment.Service = addAppointment.richTextBox1.Text;
-                        appointment.WhatHurt = addAppointment.richTextBox2.Text;
-                        appointment.WhatNeedToDo = addAppointment.richTextBox3.Text;
-                        appointment.WhatWasDone = addAppointment.richTextBox4.Text;
-                        appointment.Date = Convert.ToDateTime(addAppointment.dateTimePicker1.Value);
-
-                        db.Entry(appointment).State = EntityState.Modified;
-                        db.SaveChanges();
-                        dataGridView1.Refresh();
-                        MessageBox.Show("Запись о приёме обновлена");
+                        int clientId = (int)addAppointment.comboBox1.SelectedValue;
+                        appointment.Client = await db.Clients.FirstOrDefaultAsync(c => c.Id == clientId);
                     }
+
+                    if (addAppointment.comboBox2.SelectedValue != null)
+                    {
+                        int petId = (int)addAppointment.comboBox2.SelectedValue;
+                        appointment.Pet = await db.Pets.FirstOrDefaultAsync(p => p.Id == petId);
+                    }
+
+                    if (addAppointment.comboBox3.SelectedValue != null)
+                    {
+                        int vaccineId = (int)addAppointment.comboBox3.SelectedValue;
+                        appointment.Vaccine = await db.Vaccines.FirstOrDefaultAsync(v => v.Id == vaccineId);
+                    }
+
+                    appointment.Service = addAppointment.richTextBox1.Text;
+                    appointment.WhatHurt = addAppointment.richTextBox2.Text;
+                    appointment.WhatNeedToDo = addAppointment.richTextBox3.Text;
+                    appointment.WhatWasDone = addAppointment.richTextBox4.Text;
+                    appointment.Date = addAppointment.dateTimePicker1.Value;
+
+                    db.Entry(appointment).State = EntityState.Modified;
+
+                    await db.SaveChangesAsync();
+
+                    // Вместо холостого Refresh(), обновите данные в таблице из базы
+                    dataGridView1.DataSource = db.Appointments.ToList();
+
+                    MessageBox.Show("Запись о приёме обновлена");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show($"Ошибка: {ex.Message}\n{ex.InnerException?.Message}");
             }
         }
 

@@ -3,20 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|c:\\users\\user\\documents\\github\\veterinary\\veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\lookappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\lookappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\addappointmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\addappointmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\addappointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|c:\\users\\user\\documents\\github\\veterinary\\veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|c:\\users\\user\\documents\\github\\veterinary\\veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\globaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\globaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|c:\\users\\user\\documents\\github\\veterinary\\veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\vaccineslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|C:\\Users\\user\\Documents\\GitHub\\Veterinary\\veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF45580-BD28-4474-B1EA-59D594644049}|Veterinar\\Veterinar.csproj|solutionrelative:veterinar\\petslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +66,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "AddAppointmentForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\AddAppointmentForm.Designer.cs",
+              "RelativeDocumentMoniker": "Veterinar\\AddAppointmentForm.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\AddAppointmentForm.Designer.cs",
+              "RelativeToolTip": "Veterinar\\AddAppointmentForm.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwFMBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T19:04:58.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\GlobalData.cs",
+              "RelativeDocumentMoniker": "Veterinar\\GlobalData.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\GlobalData.cs",
+              "RelativeToolTip": "Veterinar\\GlobalData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T18:55:08.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Pet.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Pet.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Pet.cs",
+              "RelativeToolTip": "Veterinar\\Pet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T20:13:41.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "VaccinesList.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\VaccinesList.cs",
               "RelativeDocumentMoniker": "Veterinar\\VaccinesList.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\VaccinesList.cs",
               "RelativeToolTip": "Veterinar\\VaccinesList.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwEEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAEwLAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T19:37:53.193Z",
               "EditorCaption": ""
@@ -44,39 +122,124 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Form1.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Form1.cs",
+              "RelativeToolTip": "Veterinar\\Form1.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAlwDEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T20:13:07.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Form1.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinar\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T20:13:05.13Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LookAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\LookAppointmentForm.cs",
+              "RelativeDocumentMoniker": "Veterinar\\LookAppointmentForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\LookAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinar\\LookAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T19:56:48.144Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddAppointmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\AddAppointmentForm.cs",
+              "RelativeDocumentMoniker": "Veterinar\\AddAppointmentForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\AddAppointmentForm.cs",
+              "RelativeToolTip": "Veterinar\\AddAppointmentForm.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAUwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T19:20:46.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\AddAppointmentForm.cs",
+              "RelativeDocumentMoniker": "Veterinar\\AddAppointmentForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\AddAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinar\\AddAppointmentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T19:49:52.668Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Program.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Program.cs",
+              "RelativeToolTip": "Veterinar\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T19:46:14.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Vaccine.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Vaccine.cs",
+              "RelativeDocumentMoniker": "Veterinar\\Vaccine.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\Vaccine.cs",
+              "RelativeToolTip": "Veterinar\\Vaccine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T19:32:58.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "PetsList.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\PetsList.cs",
               "RelativeDocumentMoniker": "Veterinar\\PetsList.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\PetsList.cs",
               "RelativeToolTip": "Veterinar\\PetsList.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAlwEcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAlwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T19:36:59.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T19:36:59.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "VaccinesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\VaccinesList.cs",
               "RelativeDocumentMoniker": "Veterinar\\VaccinesList.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\VaccinesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Veterinar\\VaccinesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T19:33:46.005Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2026-06-08T19:33:46.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "PetsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\PetsList.cs",
               "RelativeDocumentMoniker": "Veterinar\\PetsList.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\Veterinary\\Veterinar\\PetsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Veterinar\\PetsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T19:32:08.691Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2026-06-08T19:32:08.691Z"
             }
           ]
         }
