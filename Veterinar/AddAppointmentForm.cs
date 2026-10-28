@@ -133,5 +133,36 @@ namespace Veterinar
         {
 
         }
+
+        private void comboBox1_TextUpdate(object sender, EventArgs e)
+        {
+            string searchText = comboBox1.Text;
+
+            // Начинаем поиск только если введено хотя бы 3 символа
+            if (searchText.Length >= 3)
+            {
+                // Временно отключаем событие, чтобы обновление DataSource не вызвало повторный запуск этого же метода
+                comboBox1.TextUpdate -= comboBox1_TextUpdate;
+
+                // Используем ваше готовое поле db вместо создания нового контекста
+                var filteredClients = db.Clients
+                    .Where(c => c.Name.Contains(searchText))
+                    .Take(20) // Строго ограничиваем выборку до 20 записей
+                    .ToList();
+
+                // Обновляем данные в ComboBox
+                comboBox1.DataSource = filteredClients;
+                comboBox1.ValueMember = "Id";
+                comboBox1.DisplayMember = "Name";
+
+                // Возвращаем текст пользователя, возвращаем курсор в конец строки и открываем выпадающий список
+                comboBox1.Text = searchText;
+                comboBox1.SelectionStart = searchText.Length;
+                comboBox1.DroppedDown = true;
+
+                // Включаем событие обратно
+                comboBox1.TextUpdate += comboBox1_TextUpdate;
+            }
+        }
     }
 }

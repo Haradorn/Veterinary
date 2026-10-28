@@ -69,6 +69,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(574, 28);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.TextUpdate += new System.EventHandler(this.comboBox1_TextUpdate);
             // 
             // comboBox2
             // 

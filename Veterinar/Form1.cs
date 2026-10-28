@@ -48,33 +48,25 @@ namespace Veterinar
         private void button1_Click(object sender, EventArgs e)
         {
             AddAppointmentForm appointmentForm = new AddAppointmentForm();
-            List<Client> clients = db.Clients.ToList();
-            appointmentForm.comboBox1.DataSource = clients;
-            appointmentForm.comboBox1.ValueMember = "Id";
-            appointmentForm.comboBox1.DisplayMember = "Name";
-
-            List<Pet> pets = db.Pets.ToList();
-            appointmentForm.comboBox2.DataSource = pets;
-            appointmentForm.comboBox2.ValueMember = "Id";
-            appointmentForm.comboBox2.DisplayMember = "PetName";
-
-            List<Vaccine> vaccines = db.Vaccines.ToList();
-            appointmentForm.comboBox3.DataSource = vaccines;
-            appointmentForm.comboBox3.ValueMember = "Id";
-            appointmentForm.comboBox3.DisplayMember = "Name";
 
             DialogResult result = appointmentForm.ShowDialog(this);
-            if (result == DialogResult.Cancel)
-                return;
-            else
+            if (result == DialogResult.OK)
             {
                 try
                 {
                     Appointment appointment = new Appointment();
                     appointment.Date = appointmentForm.dateTimePicker1.Value;
-                    appointment.Client = (Client)appointmentForm.comboBox1.SelectedItem;
-                    appointment.Pet = (Pet)appointmentForm.comboBox2.SelectedItem;
-                    appointment.Vaccine = (Vaccine)appointmentForm.comboBox3.SelectedItem;
+
+                    // Получаем ID выбранных сущностей из формы
+                    int selectedClientId = (int)appointmentForm.comboBox1.SelectedValue;
+                    int selectedPetId = (int)appointmentForm.comboBox2.SelectedValue;
+                    int selectedVaccineId = (int)appointmentForm.comboBox3.SelectedValue;
+
+                    // Привязываем по ID (это быстрее и не требует загрузки объектов целиком)
+                    appointment.ClientId = selectedClientId;
+                    appointment.PetId = selectedPetId;
+                    appointment.VaccineId = selectedVaccineId;
+
                     appointment.Service = appointmentForm.richTextBox1.Text;
                     appointment.WhatHurt = appointmentForm.richTextBox2.Text;
                     appointment.WhatNeedToDo = appointmentForm.richTextBox3.Text;
@@ -82,12 +74,12 @@ namespace Veterinar
 
                     db.Appointments.Add(appointment);
                     db.SaveChanges();
-                    MessageBox.Show("Запись о приёме успешно добавлена");
 
+                    dataGridView1.DataSource = db.Appointments.ToList();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show($"Ошибка при сохранении: {ex.Message}");
                 }
             }
         }
